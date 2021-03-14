@@ -42,7 +42,7 @@ public class MovieCatalogResource {
 				.map(rating -> {Movie movie = restTemplate.getForObject("http://movie-info-service/movies/"+rating.getMovieId(), Movie.class);
 				return new MovieCatalog(movie.getName(), movie.getDescription(), rating.getRating());
 				}).collect(Collectors.toList());
-		
+		System.out.println(" kiran aher");
 		return list;
 	}
 	
