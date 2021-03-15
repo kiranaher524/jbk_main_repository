@@ -43,7 +43,6 @@ public class MovieCatalogResource {
 				return new MovieCatalog(movie.getName(), movie.getDescription(), rating.getRating());
 				}).collect(Collectors.toList());
 		
-		System.out.println(" a project is updated ");
 		return list;
 	}
 	
