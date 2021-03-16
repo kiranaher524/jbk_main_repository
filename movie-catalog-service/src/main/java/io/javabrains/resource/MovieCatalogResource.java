@@ -43,6 +43,8 @@ public class MovieCatalogResource {
 				return new MovieCatalog(movie.getName(), movie.getDescription(), rating.getRating());
 				}).collect(Collectors.toList());
 		
+		System.out.println("changes are made by Kiran Aher");
+		
 		return list;
 	}
 	
